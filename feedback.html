@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Vannara Thong Final Project Feedback</title>
+    <link href="layout.css" type="text/css" rel="stylesheet">
+
+    <link href="mystyles.css" type="text/css" rel="stylesheet">
+
+
+    <!--
+	Final Project by Vannara Thong
+-->
+
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" alt="Vannara Thong's World" />
+    </header>
+    <nav>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="favlinks.html">Favorite Links</a></p>
+        <p><a href="resume.html">Resume</a></p>
+        <p><a href="other.html">My Girlfriend</a></p>
+        <p>Feedback</p>
+    </nav>
+
+    <div id="main">
+        <h1>Feedback</h1>
+        <img style="float: center; margin: 5px;" src="want-feedback.png" alt="Want Feedback">
+        <p>We welcome your thoughts! Please feel free to fill out our form below and send us your feedback. </p>
+
+        <form action="response.html" method="get">
+            <fieldset id="feedbackinfo">
+                <legend>Feedback Info</legend>
+                <p><label for="comments"> Comments: </label><textarea rows="5" cols="40" name="comments" required="required" placeholder="“** Required Entry **"></textarea>
+                </p>
+                <p><label for="re">Choose your favorite page.</label>
+                    <select name="re" id="re">
+                        <option value="none">Choose One!</option>
+                        <option value="home">Home</option>
+                        <option value="favlinks">Favorite Links</option>
+                        <option value="resume">Resume</option>
+                        <option value="other">My Girlfriend</option>
+                        <option value="feedback">Feedback</option>
+                    </select>
+                </p>
+            </fieldset>
+            <fieldset id="contactinfo">
+                <legend>Contact Info</legend>
+                <p><label for="name">Name: </label><input type="text" name="name" id="name" required="required" placeholder="“** Required Entry **"></p>
+                <p>How can we contact you? (check all that apply)<br />
+                    <input type="checkbox" name="call" id="call"> <label for="call"> Call? </label> <input type="checkbox" name="text" id="text"><label for="text"> Text? </label>
+                    <input type="checkbox" name="email" id="email"><label for="email"> Email? </label>
+                </p>
+                <p><label for="phonenum"> Phone: </label><input type="tel" name="phonenum" id="phonenum" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="Use xxx-xxx-xxxx"></p>
+                <p><label for="emailaddy"> Email: </label><input type="email" name="emailaddy" id="emailaddy"></p>
+            </fieldset>
+            <p><input type="submit" value="Send Feedback"></p>
+        </form>
+
+        <footer>
+            <p>Copyright Vannara Thong, all rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
